@@ -1,0 +1,55 @@
+/* Base styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(33, 33, 33); /* Transparent black background */
+    font-weight: bold;
+}
+
+/* Header container */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding: 2vh 5%; /* Use vh for vertical padding */
+}
+
+/* Logo */
+.logo {
+    position: relative; /* Allow absolute positioning for the underscore */
+    flex: 1; /* Allow it to grow and fill space */
+    text-align: left; /* Align text to the left */
+}
+
+.logo img {
+    max-height: 10vh; /* Responsive height based on viewport height */
+    width: auto; /* Maintain aspect ratio */
+    min-width: 250px; /* Minimum width to prevent shrinking too much */
+    display: block; /* Prevent inline spacing issues */
+    margin: 0 auto; /* Center the image */
+}
+
+.flashing-underscore {
+    position: absolute; /* Position absolutely within the logo container */
+    bottom: 20%; /* Adjust this value to position over the logo */
+    left: 65.3%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center the underscore over the image */
+    width: 25px; /* Responsive width */
+    height: 9px; /* Responsive height */
+    background-color: rgb(33, 33, 33); /* Color of the flashing underscore */
+    animation: flash 2s infinite; /* Apply flashing animation */
+}
+
+/* Keyframes for flashing effect */
+@keyframes flash {
+    0% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        opacity: 1; /* Back to visible */
+    }
+}
