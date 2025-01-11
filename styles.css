@@ -1,0 +1,298 @@
+/* General Modern Styles */
+body {
+    font-family: 'Raleway', sans-serif;  /* Using Raleway for a modern look */
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+    color: #d82f31;  /* Red from your logo */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Experience-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.Experience-item {
+    background-color: #4b4646;  /* Slightly lighter than background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(59, 59, 59, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.Experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.Experience-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.Experience-item p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projects-item {
+    background-color: #4b4646;  /* Slightly lighter than background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(59, 59, 59, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.projects-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #d82f31; /* Accent color */
+}
+
+.projects-item a.link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d82f31;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #282424;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+}
+
+.projects-item a.link:hover {
+    background-color: #d82f31;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.projects-item p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #282424;  /* Dark gray from your logo */
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+/* Base styles for the logo */
+header .logo img {
+    max-width: 100%;  /* Ensure the image doesn't exceed the container width */
+    height: auto;     /* Maintain the aspect ratio */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    header .logo img {
+        max-width: 150px;  /* Adjust logo size for mobile */
+    }
+}
+
+
+.link {
+    color: white;
+    font-size: larger;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #d82f31;  /* Red hover effect */
+    border-color: #d82f31;
+}
+
+/* Section Styles */
+.section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    text-align: center;
+}
+
+/* Social Media Links in Contact Section */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #d82f31;
+    font-size: 1.25rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #282424;  /* Dark gray hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #282424;  /* Dark gray from your logo */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #d82f31;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+}
+
+.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+}
+
+.email {
+    font-size: larger;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Modern Footer */
+footer a:hover {
+    color: #d82f31;  /* Red hover color for footer links */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust header for mobile */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation on mobile */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Show nav-links when clicked (for mobile menu toggle) */
+    header.active .nav-links {
+        display: flex;
+    }
+
+    /* Adjust sections for mobile */
+    .section {
+        padding: 1rem 0;
+    }
+
+    .Experience-gallery {
+        grid-template-columns: 1fr; /* Stack gallery items on mobile */
+    }
+
+    .Experience-item {
+        padding: 15px;
+    }
+    
+    /* Adjust social links */
+    .social-links a {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+
+    /* Adjust footer for mobile */
+    footer {
+        font-size: 0.9rem;
+    }
+}
